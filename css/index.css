@@ -1,0 +1,85 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.btn-pri{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    background: transparent;
+    border: 2px white solid;
+    margin-top: 25px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.btn-pri:hover{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    background: rgb(92, 90, 4);
+    border: 2px transparent solid;
+    margin-top: 25px;
+    padding: 20px;
+    width: 100%;    
+    transition: all 0.5s;
+}
+#logo{
+    height: 100px;
+    margin-left: 30px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 10px 'Open Sans', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    color: #4c4c4c;
+    background-image: linear-gradient(320deg, #056420, #1825b7);
+}
+.clear {
+    clear: both;
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.select-wrapper {
+    position: relative;
+    width: 350px;
+}
+.select-wrapper::after {
+    color: black;
+    content: '▾';
+    margin-right: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 20px;
+}
+.select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+}
+.select:focus {
+    color: black;
+}
+.select::-ms-expand {
+    display: none;
+}

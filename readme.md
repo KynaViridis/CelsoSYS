@@ -1,0 +1,2 @@
+# Sistema básico para imprimir PDFs
+Criei esse sistema básico para imprimir PDFs no padrão solicitado, o cliente que é despachante usava um .docx que sempra dava problema de formatação, fique a vontade para utilizar este código em projetos pessoais
