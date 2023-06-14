@@ -119,12 +119,9 @@ if (!empty($_POST)) {
 
     $pdf->Output();
 }
-
-
 ?>
 
-<link rel="stylesheet" href="../css/procuracao.css">
-
+<link rel="stylesheet" href="../css/doc.css">
 <body>
     <div class="container">
         <div style="margin-bottom: 50px; text-align: center; font-size: 25px;">Procuração</div>

@@ -129,9 +129,9 @@ if (!empty($_POST)) {
 <link rel="stylesheet" href="../css/doc.css">
 <body>
     <div class="container">
-        <div style="margin-bottom: 50px; text-align: center; font-size: 25px;">DECLARAÇÃO DE RESIDÊNCIA</div>
+        <div style="margin-bottom: 50px; text-align: center; font-size: 25px;">RECIBO DE VENDA DE VEÍCULO</div>
         <form action="residencia.php" method="post" target="_blank">
-            <div class="title">Dados Pessoa</div>
+            <div class="title">Dados Do Comprador</div>
             <div class="user_details">
                 <div class="input_pox">
                     <span>Nome</span>
@@ -146,20 +146,24 @@ if (!empty($_POST)) {
                     <input name="rga" type="text" placeholder="RG" required>
                 </div>
                 <div class="input_pox">
-                    <span>Orgão Expedidor</span>
-                    <input name="org" type="text" placeholder="Orgão Expedidor" required>
+                    <span>Endereço</span>
+                    <input name="addr" type="text" placeholder="ex: Rua Padre Antonio Lock, 615, Centro" required>
                 </div>
                 <div class="input_pox">
-                    <span>Nacionalidade</span>
-                    <input name="nacionalidade" type="text" placeholder="Nacionalidade" required>
+                    <span>Marca</span>
+                    <input name="marca" type="text" placeholder="Marca do veículo" required>
                 </div>
                 <div class="input_pox">
-                    <span>Naturalidade</span>
-                    <input name="naturalidade" type="text" placeholder="Naturalidade" required>
+                    <span>Ano Fabricação</span>
+                    <input name="ano" type="number" placeholder="Ano/Mod. Fabricação" required>
                 </div>
                 <div class="input_pox">
-                    <span>Município</span>
-                    <input name="cidade" type="text" placeholder="Município" required>
+                    <span>Nº Cilindros</span>
+                    <input name="cylinder" type="number" placeholder="Nº de Cilindros" required>
+                </div>
+                <div class="input_pox">
+                    <span>Chassis</span>
+                    <input name="chassis" type="text" placeholder="chassis" required>
                 </div>
             </div>
             <div class="title" style="margin-top: 35px;">Dados Resiência</div>

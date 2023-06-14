@@ -7,6 +7,7 @@
       <select class="select">
         <option value="1">Procuração</option>
         <option value="2">Declaração de Residência</option>
+        <option value="3">Recibo de Venda</option>
       </select>
       <button type="button" class="btn-pri">Informar Dados</button>
     </div>

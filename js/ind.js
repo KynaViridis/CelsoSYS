@@ -8,5 +8,8 @@ $(".btn-pri").on("click", function () {
         case '2':
             window.location.href = window.location.href+"doc/residencia.php";
         break;
+        case '3':
+            window.location.href = window.location.href+"doc/recibo.php";
+        break;
     }
 });
