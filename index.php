@@ -8,6 +8,10 @@
         <option value="1">Procuração</option>
         <option value="2">Declaração de Residência</option>
         <option value="3">Recibo de Venda</option>
+        <option value="4">Resolução 282</option>
+        <option value="5">Desistencia de venda</option>
+        <option value="6">Errata</option>
+        <option value="7">Segunda Via</option>
       </select>
       <button type="button" class="btn-pri">Informar Dados</button>
     </div>

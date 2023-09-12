@@ -11,5 +11,17 @@ $(".btn-pri").on("click", function () {
         case '3':
             window.location.href = window.location.href+"doc/recibo.php";
         break;
+        case '4':
+            window.location.href = window.location.href+"doc/res282.php";
+        break;
+        case '5':
+            window.location.href = window.location.href+"doc/des_venda.php";
+        break;
+        case '6':
+            window.location.href = window.location.href+"doc/errata.php";
+        break;
+        case '7':
+            window.location.href = window.location.href+"doc/segvia.php";
+        break;
     }
 });
