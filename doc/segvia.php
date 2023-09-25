@@ -8,7 +8,7 @@ if (!empty($_POST)) {
     $pdf->SetFont('Arial', 'B', 16);
     $pdf->Image('../src/logo.png',55, 5, -500);
     $pdf->Line(10,45,200,45);
-    $pdf->Text(30,65,'DECLARAÇÃO PARA CORREÇÃO DE ERROS NO C.R.V.');
+    $pdf->Text(30,65,'Solicitação de 2ª Via');
 
     $pdf->SetFont('Arial', '', 12);
     $text = "Nos termos da ORDEM DE SERVIÇO nº. 007/97 - COOVE-DG, datada de 21 de março de 1997, solicito ao DETRAN/PR, a emissão de 2ª Via do Certificado de Registro do veículo abaixo, assumindo total responsabilidade.";
