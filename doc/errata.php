@@ -21,9 +21,9 @@ if (!empty($_POST)) {
     $pdf->Text(48,100,$_POST['rga']);
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(85,100,'CPF nº');
+    $pdf->Text(85,100,'CPF/CNPJ nº');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(100,100,$_POST['cpfa']);
+    $pdf->Text(115,100,$_POST['cpfa']);
 
     $pdf->SetFont('Arial', '', 12);
     $pdf->Text(11,110,'Proprietário do veículo de placa ');
@@ -111,7 +111,7 @@ if (!empty($_POST)) {
                     <input type="text" name="a" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">

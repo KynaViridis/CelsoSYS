@@ -25,9 +25,9 @@ if (!empty($_POST)) {
 
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(10,90,'CPF nº ');
+    $pdf->Text(10,90,'CPF/CNPJ nº ');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(26,90,$_POST['cpfa']);
+    $pdf->Text(40,90,$_POST['cpfa']);
     $pdf->SetFont('Arial', '', 12);
     $pdf->Text(10,95,'Residente na ');
     $pdf->SetFont('Arial', 'B', 12);
@@ -57,18 +57,18 @@ if (!empty($_POST)) {
     $pdf->Text(40,130,$_POST['mmv']);
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(71,130,',placa ');
+    $pdf->Text(10,135,'Placa,');
 
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(85,130,$_POST['placa']);
+    $pdf->Text(23,135,$_POST['placa']);
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(109,130,',chassi');
+    $pdf->Text(50,135,',chassi');
 
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(125,130,$_POST['chassi']);
+    $pdf->Text(65,135,$_POST['chassi']);
 
-    $pdf->setY(140);
+    $pdf->setY(145);
     $pdf->setX(9);
     $pdf->SetFont('Arial', '',12);
     $text = 'Declaro, ainda, serem verdadeiras as informações supracitadas, sujeitando-me às cominações dispostas no art. 299 do Código Penal Brasileiro.';
@@ -109,7 +109,7 @@ if (!empty($_POST)) {
                     <input type="text" name="a" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">

@@ -18,15 +18,15 @@ if (!empty($_POST)) {
     $pdf->SetFont('Arial', 'B', 12);
     $pdf->Text(30,80,$_POST['addr']);
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(10,90,'CPF');
+    $pdf->Text(10,90,'CPF/CNPJ');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(20,90,$_POST['cpfa']);
+    $pdf->Text(32,90,$_POST['cpfa']);
 
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(60,90,'RG');
+    $pdf->Text(75,90,'RG');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(68,90,$_POST['rga']);
+    $pdf->Text(85,90,$_POST['rga']);
 
 
     $pdf->SetFont('Arial', '', 12);
@@ -95,13 +95,13 @@ if (!empty($_POST)) {
 
     
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(10,175,'CPF');
+    $pdf->Text(10,175,'CPF/CNPJ');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(20,175,$_POST['cpfb']);
+    $pdf->Text(32,175,$_POST['cpfb']);
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(65,175,'RG');
+    $pdf->Text(75,175,'RG');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(74,175,$_POST['rgb']);
+    $pdf->Text(85,175,$_POST['rgb']);
 
     $pdf->SetFont('Arial', '', 12);
     $text = "Em pagamento do veículo e de acordo com a discriminação acima, no estado em que se encontra e conforme foi examinado pelo comprador. A venda desse veículo, foi feita livre e desembaraçada de qualquer ônus, podendo o comprador transferir para seu nome o certificado de propriedade sem reserva de domínio. Para maior clareza, firmo o presente recibo.";
@@ -151,7 +151,7 @@ if (!empty($_POST)) {
                     <input type="text" name="a" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">
@@ -170,7 +170,7 @@ if (!empty($_POST)) {
                     <input type="text" name="b" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfb" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">

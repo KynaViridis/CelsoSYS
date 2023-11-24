@@ -25,13 +25,13 @@ if (!empty($_POST)) {
 
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(10,109,'CPF n.:');
+    $pdf->Text(10,109,'CPF/CNPJ n.:');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(26,109,$_POST['cpfa']);
+    $pdf->Text(38,109,$_POST['cpfa']);
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(70,109,'Nacionalidade:');
+    $pdf->Text(80,109,'Nacionalidade:');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(100,109,$_POST['nacionalidade']);
+    $pdf->Text(110,109,$_POST['nacionalidade']);
 
     $pdf->SetFont('Arial', '', 12);
     $pdf->Text(10,116,'Naturalidade:');
@@ -138,7 +138,7 @@ if (!empty($_POST)) {
                     <input type="text" name="a" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">

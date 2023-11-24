@@ -21,9 +21,9 @@ if (!empty($_POST)) {
 
     
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(52,35,'CPF:');
+    $pdf->Text(52,35,'CPF/CNPJ:');
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(64,35, $_POST['cpfa']);
+    $pdf->Text(75,35, $_POST['cpfa']);
         
     $pdf->SetFont('Arial', 'B', 12);
     $pdf->Text(10,45,'Endereço:');
@@ -44,9 +44,9 @@ if (!empty($_POST)) {
 
     
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(52,70,'CPF:');
+    $pdf->Text(52,70,'CPF/CNPJ:');
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(64,70, $_POST['cpfb']);
+    $pdf->Text(75,70, $_POST['cpfb']);
         
     $pdf->SetFont('Arial', 'B', 12);
     $pdf->Text(10,80,'Endereço:');
@@ -137,7 +137,7 @@ if (!empty($_POST)) {
                     <input name="rga" type="text" placeholder="RG do outorgante" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF do outorgante" required>
                 </div>
                 <div class="input_pox">
@@ -155,7 +155,7 @@ if (!empty($_POST)) {
                         <input name="rgb" type="text" placeholder="RG do outorgado" required>
                     </div>
                     <div class="input_pox">
-                        <span>CPF</span>
+                        <span>CPF/CNPJ</span>
                         <input name="cpfb" type="text" placeholder="CPF do outorgado" required>
                     </div>
                     <div class="input_pox">

@@ -20,9 +20,9 @@ if (!empty($_POST)) {
     $pdf->SetFont('Arial', 'B', 12);
     $pdf->Text(42,92,$_POST['rga']);
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Text(68,92,'e CPF');
+    $pdf->Text(68,92,'e CPF/CNPJ:');
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Text(82,92,$_POST['cpfa']);
+    $pdf->Text(95,92,$_POST['cpfa']);
 
 
     $pdf->SetFont('Arial', '', 12);
@@ -130,7 +130,7 @@ if (!empty($_POST)) {
                     <input type="text" name="a" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">

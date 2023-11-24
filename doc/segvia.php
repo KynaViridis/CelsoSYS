@@ -62,7 +62,7 @@ if (!empty($_POST)) {
     $pdf->Line(40,250,175,250);
     $pdf->Text(65,260,'Reconhecimento de Firma do Proprietário');
     $pdf->SetFont('Arial', '', 12);
-    $text = 'RG '.$_POST['rga'].'     CPF '.$_POST['cpfa'];
+    $text = 'RG '.$_POST['rga'].'     CPF/CNPJ '.$_POST['cpfa'];
     $pdf->Text(65,270, $text);
 
     $pdf->Line(5,285,205,285);
@@ -88,7 +88,7 @@ if (!empty($_POST)) {
                     <input type="text" name="a" placeholder="Nome" required>
                 </div>
                 <div class="input_pox">
-                    <span>CPF</span>
+                    <span>CPF/CNPJ</span>
                     <input name="cpfa" type="text" placeholder="CPF" required>
                 </div>
                 <div class="input_pox">
